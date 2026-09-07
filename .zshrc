@@ -116,6 +116,7 @@ alias v="nvim"
 alias vi="nvim"
 alias vim="nvim"
 alias vdiff="nvim -d"
+alias gfs="git fetch && git switch"
 
 # VI-MODE configuration
 VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
@@ -135,7 +136,7 @@ export JENV_SHELL=zsh
 export JENV_LOADED=1
 unset JAVA_HOME
 unset JDK_HOME
-source '/opt/homebrew/Cellar/jenv/0.5.6/libexec/libexec/../completions/jenv.zsh'
+source '/opt/homebrew/opt/jenv/libexec/completions/jenv.zsh'
 jenv rehash 2>/dev/null
 jenv refresh-plugins
 jenv() {
@@ -183,8 +184,8 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
-source ~/.zprofile
-source ~/.zendesk_init.zsh
+source ~/.zprofile  ### .zetup
+source ~/.zendesk_init.zsh  ### Other zendesk related
 
 
 
@@ -343,3 +344,22 @@ alias cd="z"
 eval "$(zoxide init zsh)"
 
 alias config='/usr/bin/git --git-dir=/Users/fei.lu/.cfg/ --work-tree=/Users/fei.lu'
+
+export PATH="/Users/fei.lu/.local/bin:$PATH"
+
+# Rust/Cargo
+. "$HOME/.cargo/env"
+
+export JIRA_API_TOKEN=""
+
+export CODEX_OPENAI_API_KEY=""
+
+# VS Code shell integration
+[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
+
+export PATH="$PATH:~/.local/share/coursier/bin"
+
+# opencode
+export PATH=/Users/fei.lu/.opencode/bin:$PATH
+export EDITOR="nvim"
+

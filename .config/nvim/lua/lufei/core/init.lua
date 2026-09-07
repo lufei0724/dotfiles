@@ -1,2 +1,6 @@
 require("lufei.core.options")
-require("lufei.core.keymaps")
+if vim.g.vscode then
+	require("lufei.vscode.keymaps")
+else
+	require("lufei.core.keymaps")
+end

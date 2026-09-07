@@ -1,0 +1,35 @@
+term = "xterm-256color"
+
+shell-integration = zsh
+
+font-family = MesloLGS Nerd Font Mono
+font-size = 14
+
+background-opacity = 1
+background-blur = true
+
+theme = tokyonight
+
+mouse-hide-while-typing = true
+
+auto-update = check
+
+window-save-state = always
+
+scrollback-limit = 1000000
+
+keybind = ctrl+a>c=new_tab
+
+# keybind = ctrl+h=goto_split:left
+# keybind = ctrl+j=goto_split:bottom
+# keybind = ctrl+k=goto_split:top
+# keybind = ctrl+l=goto_split:right
+
+# keybind = ctrl+a>h=new_split:left
+# keybind = ctrl+a>j=new_split:down
+# keybind = ctrl+a>k=new_split:up
+# keybind = ctrl+a>l=new_split:right
+# keybind = ctrl+a>m=toggle_split_zoom
+
+# keybind = ctrl+a>n=next_tab
+# keybind = ctrl+a>p=previous_tab
