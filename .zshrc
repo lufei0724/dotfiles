@@ -350,10 +350,6 @@ export PATH="/Users/fei.lu/.local/bin:$PATH"
 # Rust/Cargo
 . "$HOME/.cargo/env"
 
-export JIRA_API_TOKEN=""
-
-export CODEX_OPENAI_API_KEY=""
-
 # VS Code shell integration
 [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
 
